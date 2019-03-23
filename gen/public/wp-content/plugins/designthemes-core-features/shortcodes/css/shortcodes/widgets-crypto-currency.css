@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	1.1 - Testimonials
+	1.1 - Browser Css
+	1.3 - Default Color
+	1.4 - Responsive
+	1.5 - Skin Color*/
+
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-testimonial-images li a img, .dt-sc-testimonial.type4 .dt-sc-testimonial-author img, .dt-sc-testimonial.type5 .dt-sc-testimonial-quote, .dt-sc-testimonial.type5 .dt-sc-testimonial-author img { -webkit-transition:all 0.3s linear 0s; -moz-transition:all 0.3s linear 0s; -o-transition:all 0.3s linear 0s; -ms-transition:all 0.3s linear 0s; transition:all 0.3s linear 0s; }	
+
+
+	/*--------------------------------------------------------------
+	1.1 - Crypto Currency Widgets
+	--------------------------------------------------------------*/
+
+	.dt-sc-crypto-widget { float: left; width: 100%; }
+
+	.dt-sc-crypto-widget a[rel="nofollow"] > div > img { display: inline; }
+
+	.dt-sc-crypto-horizontal .ccc-widget.ccc-header { float: none !important; }
+	
+	.dt-sc-crypto-converter .section-converter-ccc input { box-shadow: none; }
+	.dt-sc-crypto-converter .section-converter-ccc input, .dt-sc-crypto-converter .section-converter-ccc .fromSymbolLabel, .dt-sc-crypto-converter .section-converter-ccc .styledSelect { height: 50px; line-height: 50px; }
+	.dt-sc-crypto-converter .section-converter-ccc .fromSymbolLabel, .dt-sc-crypto-converter .section-converter-ccc .styledSelect { border-radius: 0; }
+	.dt-sc-crypto-converter .section-converter-ccc .selection-box:before { content: none; }
+	.dt-sc-crypto-converter .section-converter-ccc .selection-box select { padding: 0 15px; }
+
+	.dt-sc-crypto-ticker { float: left; width: 100%; }
+	.dt-sc-crypto-ticker .ccc-widget.ccc-header-v3 { padding: 5px; }
+	.ccc-coin-header-v3-container.marquee .ccc-header-v3-ccc-price-container a .ccc-header-v3-price-logo { margin-right: 5px; }
+	.vc_row.vc_row-has-fill .dt-sc-crypto-ticker .ccc-widget.ccc-header-v3,
+	.vc_row[class*="dt-skin"] .dt-sc-crypto-ticker .ccc-widget.ccc-header-v3 { background: none !important; }
+
+
+	.dt-sc-crypto-converter.form-fields-inline .histoTitleConverter, .dt-sc-crypto-converter.form-fields-inline .poweredByWrapper, .dt-sc-crypto-converter.form-fields-inline form label { display: none; }
+	.dt-sc-crypto-converter.form-fields-inline.alter .histoTitleConverter { display: block; margin-bottom: 20px; text-align: center; }
+
+	.dt-sc-crypto-converter.form-fields-inline .ccc-widget.ccc-converter > div { background: none !important; border: none !important; clear: both; float: left; padding: 0 !important; width: 100%;  }
+
+	.dt-sc-crypto-converter.form-fields-inline .convertForm, .dt-sc-crypto-converter.form-fields-inline .convertForm form {  float: left; width: 100%; }
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc { float: left; display: flex; flex-direction: row-reverse; }
+
+
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel, 
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect,
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .selection-box, 
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel ~ div, 
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect ~ div,
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .selection-box ~ div { margin-right: 0 !important; }
+
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel, 
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect,
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .selection-box { /* display: inherit;*/ float: none !important;  padding: 0 15px; width: auto !important; }
+
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel { padding-left: 25px; padding-right: 20px; }
+
+
+	.dt-sc-crypto-converter.form-fields-inline label[for="fsym_price"] ~ .section-converter-ccc { width: 30%; }
+	.dt-sc-crypto-converter.form-fields-inline label[for="tsym_price"] ~ .section-converter-ccc { width: 70%; }
+
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel { width: 50% !important; }
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel ~ div { width: 50%; }
+
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect { width: 40% !important; }
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect ~ div { padding-right: 30px; width: 60%; }
+
+
+	.dt-sc-crypto-converter.form-fields-inline.alter { padding: 30px; }
+
+	.dt-sc-crypto-converter.form-fields-inline.alter label[for="fsym_price"] ~ .section-converter-ccc, 
+	.dt-sc-crypto-converter.form-fields-inline.alter label[for="tsym_price"] ~ .section-converter-ccc { margin: 10px 0; width: 100%; }
+
+	.dt-sc-crypto-converter.form-fields-inline.alter .section-converter-ccc .styledSelect { width: 50% !important; }
+	.dt-sc-crypto-converter.form-fields-inline.alter .section-converter-ccc .styledSelect ~ div { padding-right: 0; width: 50%; }
+
+	.dt-sc-crypto-converter.form-fields-inline.bordered.alter .section-converter-ccc .fromSymbolLabel ~ div, 
+	.dt-sc-crypto-converter.form-fields-inline.bordered.alter .section-converter-ccc .styledSelect ~ div { padding-right: 2px; }
+
+
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel ~ div input, 
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect ~ div input,
+	.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .selection-box ~ div input { padding-bottom: 0; padding-top: 0; text-align: center; }
+
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .fromSymbolLabel,
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .fromSymbolLabel ~ div input,
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .styledSelect, 
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .styledSelect ~ div input { background: none !important; font-size: 25px; height: 60px; line-height: 60px; }
+
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .fromSymbolLabel { border-width: 0 !important; }
+
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .fromSymbolLabel ~ div input,
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .styledSelect, 
+	.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .styledSelect ~ div input,
+	.dt-sc-crypto-converter.form-fields-inline.bordered.alter .section-converter-ccc .fromSymbolLabel { border: 2px solid #000 !important; }
+
+
+	.dt-custom-chart-advanced .tabContainer { display: none !important; }
+
+	.dt-sc-crypto-summary .highlightsWrapper { background-color: rgba(0, 0, 0, 0.035); border-width: 1px !important; }
+	.dt-sc-crypto-summary .tabContainer { text-align: center; }
+	.dt-sc-crypto-summary .tabContainer .tablinks { display: inline-block; float: none; }
+
+	.dt-sc-crypto-summary .table-row .title, .dt-sc-crypto-historical div.histoRow { border-color: rgba(0,0,0,0.1) !important; }
+
+	.dt-sc-crypto-chart.dt-simple-chart-without-bg .ccc-chart > div { border-color: rgba(255,255,255, 0.05) !important; border-radius: 0 !important; box-shadow: none !important; }
+
+	.dt-sc-crypto-chart.dt-simple-chart-without-bg .ccc-chart .header-div,
+	.dt-sc-crypto-chart.dt-simple-chart-without-bg .ccc-chart > div { background: rgba(255,255,255,0.1) !important; }
+
+	.dt-sc-crypto-chart.dt-simple-chart-without-bg .ccc-chart .header-div > a:first-child, 
+	.dt-sc-crypto-chart.dt-simple-chart-without-bg .ccc-chart .header-div ~ div, 
+	.dt-sc-crypto-chart.dt-simple-chart-without-bg .ccc-chart .header-div ~ div span, 
+	.dt-sc-crypto-chart.dt-simple-chart-without-bg .ccc-chart .header-div ~ div a > span,
+	.dt-skin-primary-bg .dt-sc-crypto-converter.form-fields-inline.alter .histoTitleConverter { color: #fff !important; }
+
+
+	div[class*="dt-skin"] .ccc-widget.ccc-header-v2, .vc_col-has-fill .ccc-widget.ccc-header-v2 { background: none !important; }
+
+	.dt-sc-crypto-prices-list.dt-pricelist-with-custom-bg .ccc-list > div { border-color: rgba(0, 0, 0, 0.08) !important; border-radius: 0 !important; }
+	.dt-sc-crypto-prices-list.dt-pricelist-with-custom-bg .ccc-list > div, 
+	.dt-sc-crypto-prices-list.dt-pricelist-with-custom-bg .ccc-list > div > .header-div, 
+	.dt-sc-crypto-prices-list.dt-pricelist-with-custom-bg .ccc-list > div > a { background: none !important; }
+	.dt-sc-crypto-prices-list.dt-pricelist-with-custom-bg .ccc-list > div > a:last-child { border-width: 0 !important; }
+
+
+	.dt-sc-dark-bg .dt-sc-crypto-converter.form-fields-inline.alter .histoTitleConverter,
+	.dt-sc-dark-bg .dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .fromSymbolLabel,
+	.dt-sc-dark-bg .dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .styledSelect { color: #fff !important; }
+
+	.dt-sc-dark-bg .dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .fromSymbolLabel ~ div input,
+	.dt-sc-dark-bg .dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .styledSelect, 
+	.dt-sc-dark-bg .dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .styledSelect ~ div input,
+	.dt-sc-dark-bg .dt-sc-crypto-converter.form-fields-inline.bordered.alter .section-converter-ccc .fromSymbolLabel { border-color: #fff !important; }
+
+
+	/*--------------------------------------------------------------
+	1.2 - Responsive
+	--------------------------------------------------------------*/
+
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+
+		.dt-sc-crypto-converter.form-fields-inline label[for="fsym_price"] ~ .section-converter-ccc,
+		.dt-sc-crypto-converter.form-fields-inline label[for="tsym_price"] ~ .section-converter-ccc { width: 100%; }
+
+		.dt-sc-crypto-converter.form-fields-inline label[for="fsym_price"] ~ .section-converter-ccc { margin-bottom: 10px; }
+
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel ~ div { padding-right: 30px; width: 60%; }
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel { padding-left: 20px; width: 40% !important; }
+
+		.dt-sc-crypto-converter.form-fields-inline.bordered .section-converter-ccc .fromSymbolLabel { border: 2px solid #000 !important; }
+
+	}
+
+	@media only screen and (max-width: 767px) {
+
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc { flex-direction: column-reverse; align-items: center; }
+
+		.dt-sc-crypto-converter.form-fields-inline label[for="fsym_price"] ~ .section-converter-ccc { margin-bottom: 20px; }
+
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel, 
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel ~ div,
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect,
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect ~ div { width: 100% !important; }
+
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .fromSymbolLabel ~ div,
+		.dt-sc-crypto-converter.form-fields-inline .section-converter-ccc .styledSelect ~ div { margin-bottom: 10px; padding-left: 0; padding-right: 0; }
+
+	}	

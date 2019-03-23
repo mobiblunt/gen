@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Table of Content
+==================================================
+	1.0  -  Donutchart
+	2.0  -  DT Responsive*/
+	
+	/*--------------------------------------------------------------
+	1.0 - Donutchart
+	--------------------------------------------------------------*/
+	.dt-sc-donutchart { text-align:center; margin:0px auto 30px; }
+	.dt-sc-donutchart canvas { display: inline-block; position: relative; }
+	.alter .dt-sc-donutchart canvas { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); }
+	h5.dt-sc-donutchart-title { text-align:center; width:100%; font-size:16px; margin-bottom:0px; font-weight:500; text-transform:uppercase; letter-spacing: 0.8px; }
+	
+	.dt-sc-donutchart-small { width:100px; margin:0px auto; }
+	.dt-sc-donutchart-medium { width:200px; margin:0px auto; }
+	.dt-sc-donutchart-large { width:300px; margin:0px auto; }
+	
+	.donutchart-text { font-weight:300 !important; }		
+	.dt-sc-donutchart-small .donutchart-text { font-size:24px !important; }	
+	.dt-sc-donutchart-medium .donutchart-text { font-size:30px !important; }	
+	.dt-sc-donutchart-large .donutchart-text { font-size:50px !important; }	
+	
+	.dark-bg .donutchart-text { color:#ffffff; }
+	.dt-sc-donutchart-desc { margin: 15px 0 10px; text-align: center; }
+	.dt-sc-donutchart-medium.first:before { display: none; }
+	
+	
+	/*--------------------------------------------------------------
+	2.0 - DT Responsive
+	--------------------------------------------------------------*/
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+
+		.dt-sc-one-fifth .dt-sc-donutchart-medium { width:160px; }
+		h5.dt-sc-donutchart-title { font-size: 15px; }
+
+	}
+	
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		.dt-sc-one-fifth .dt-sc-donutchart-medium { width:120px; }
+		.dt-sc-one-fifth .dt-sc-donutchart { width: 110px !important; height: 110px !important; }
+		.dt-sc-one-fifth .dt-sc-donutchart-medium .donutchart-text { width: 110px !important; line-height: 110px !important; }
+		.dt-sc-one-fifth  h5.dt-sc-donutchart-title { font-size:15px; }
+		.dt-sc-donutchart-medium .donutchart-text { font-size:30px !important; }
+		.dt-sc-donutchart-medium canvas { width: 130px !important; height: 130px !important; }
+	
+	}
+	
+	@media only screen and (max-width:767px) {
+	
+	.dt-sc-donutchart-medium { margin-bottom: 30px; }
+	
+	}
