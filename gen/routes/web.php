@@ -20,7 +20,7 @@ Route::get('about', 'DashiController@about')->name('about.home');
 Route::get('contact', 'DashiController@contact')->name('contact.home');
 Route::get('privacy', 'DashiController@privacy')->name('privacy.home');
 Route::get('robots', 'DashiController@robots')->name('robots.home');
-Route::get('steps', 'DashiController@steps')->name('steps.home');
+Route::get('hedge-fund', 'DashiController@steps')->name('steps.home');
 Route::get('terms', 'DashiController@terms')->name('terms.home');
 Route::get('affiliate', 'DashiController@affiliate')->name('affiliate.home');
 
